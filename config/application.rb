@@ -21,5 +21,13 @@ module TestEventStore
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    config.generators do |generate|
+      generate.helper          false
+      generate.assets          false
+
+      generate.test_framework  :rspec, fixture: false
+      generate.view_specs      false
+      generate.helper_specs    false
+    end
   end
 end

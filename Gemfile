@@ -8,8 +8,10 @@ gem 'puma', '~> 3.0'
 gem 'rails_event_store'
 
 # Assets
+gem 'haml-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails'
+gem 'bootstrap-sass'
 gem 'turbolinks', '~> 5'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
