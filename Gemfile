@@ -7,6 +7,8 @@ gem 'puma', '~> 3.0'
 # Brains behind this app
 gem 'rails_event_store'
 
+gem 'money-rails'
+
 # Assets
 gem 'haml-rails'
 gem 'sass-rails', '~> 5.0'

@@ -10,10 +10,10 @@
     = f.label :name
     = f.text_field :name
   .field
-    = f.label :price
-    = f.number_field :price
+    = f.label :price_cents
+    = f.number_field :price_cents
   .field
     = f.label :stock_quantity
     = f.number_field :stock_quantity
   .actions
-    = f.submit 'Save'
+    = f.submit 'Save', class: 'btn btn-default'
