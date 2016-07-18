@@ -27,6 +27,7 @@ module TestEventStore
 
       generate.test_framework  :rspec, fixture: false
       generate.view_specs      false
+      generate.view_specs      false
       generate.helper_specs    false
     end
   end
