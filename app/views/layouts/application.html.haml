@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title TestEventStore
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
@@ -22,6 +22,9 @@
               %a{ href: products_path } Products
             %li{ class: params[:controller] == 'orders' ? 'active' : '' }
               %a{ href: orders_path } Orders
+
+          %ul.nav.navbar-nav.navbar-right
+            %li= link_to "Cart: #{@current_order.products.count}", @current_order
 
     .container
       = yield
