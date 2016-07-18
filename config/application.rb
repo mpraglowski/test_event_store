@@ -30,5 +30,7 @@ module TestEventStore
       generate.view_specs      false
       generate.helper_specs    false
     end
+
+    config.paths.add 'ordering_context/lib', eager_load: true
   end
 end
